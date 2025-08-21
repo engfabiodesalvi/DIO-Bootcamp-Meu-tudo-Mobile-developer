@@ -1,0 +1,18 @@
+{
+  "name": "04-desafio-de-codigo",
+  "version": "1.0.0",
+  "description": "Desaio 1 - Monitor de Vencimento de Empréstimos",
+  "main": "index.js",
+  "scripts": {
+    "test1": "node src/test1.js",
+    "test2": "node src/test2.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
