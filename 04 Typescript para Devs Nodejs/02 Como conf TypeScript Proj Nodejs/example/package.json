@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
+  "scripts": {    
     "start:dev:node": "node src/index.js",
     "dist3": "npx tsc src/index.ts",
     "dist:tsc": "npx tsc",
@@ -11,7 +11,7 @@
     "start:dev": "tsx src/index.ts",
     "start:watch": "tsx watch src/index.ts",
     "start:dist:tsc": "npm run dist:tsc && node dist/index.js",
-    "start:dist:tsup": "npm run dist:tsup && node dist/index.js"
+    "start:dist:tsup": "npm run dist:tsup && node dist/index.cjs"
   },
   "keywords": [],
   "author": "",
