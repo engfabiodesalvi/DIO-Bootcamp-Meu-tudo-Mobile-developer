@@ -1,0 +1,25 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev:node": "node src/index.js",
+    "dist3": "npx tsc src/index.ts",
+    "dist:tsc": "npx tsc",
+    "dist:tsup": "tsup src",
+    "start:dev": "tsx src/index.ts",
+    "start:watch": "tsx watch src/index.ts",
+    "start:dist:tsc": "npm run dist:tsc && node dist/index.js",
+    "start:dist:tsup": "npm run dist:tsup && node dist/index.cjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.4",
+    "typescript": "^5.9.2"
+  }
+}

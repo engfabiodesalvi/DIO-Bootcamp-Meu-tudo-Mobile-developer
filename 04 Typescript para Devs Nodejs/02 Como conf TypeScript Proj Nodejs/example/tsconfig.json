@@ -1,0 +1,57 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+    // File Layout
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "module": "commonjs", // ok   "nodenext" default
+    "target": "es6", // ok  "esnext" default
+    "outDir": "./dist", // ok
+    "rootDir": "./src",
+    "esModuleInterop": true, // ok
+
+    "types": [],
+    // For nodejs:
+    // "lib": ["esnext"],
+    // "types": ["node"],
+    // and npm install -D @types/node
+
+    // Other Outputs
+    //"sourceMap": true,
+    //"declaration": true,
+    //"declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Style Options
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // Recommended Options
+    "strict": true, // ok
+    
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    //"skipLibCheck": true, 
+
+  },
+  // "include": [
+  //   "src/**/*" // Includes all TypeScript files within the 'src' directory and its subdirectories
+  // ],
+  // "exclude": [
+  //   "node_modules", // Excludes the 'node_modules' directory from compilation
+  //   "dist" // Excludes the 'dist' directory from compilation (to prevent re-compiling output)
+  // ]     
+}
