@@ -11,7 +11,7 @@
     "start:dev": "tsx src/index.ts",
     "start:watch": "tsx watch src/index.ts",
     "start:dist:tsc": "npm run dist:tsc && node dist/index.js",
-    "start:dist:tsup": "npm run dist:tsup && node dist/index.cjs"
+    "start:dist:tsup": "npm run dist:tsup && node dist/index.js"
   },
   "keywords": [],
   "author": "",

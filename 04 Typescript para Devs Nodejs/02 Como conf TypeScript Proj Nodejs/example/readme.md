@@ -8,7 +8,7 @@ npm init -y
 ```
 #### Configure scripts
 ```json
-"start:dev:js": "node src/index.js",
+"start:dev": "node src/index.js",
 ```
 #### Installing Typescript
 ```prompt
@@ -16,7 +16,7 @@ npm install -D typescript
 ```
 #### Create .gitignore
 >Create .gitignore file and include "node_modules/" foder:\
-![index.ts and index.js](./downloads/img2.png)
+![index.ts and index.js](./downloads/img3.png)
 
 #### Transpile index.ts and run index.js
 ```bash
@@ -25,16 +25,22 @@ npm run start:dev:js
 ```
  >#### Configure scripts for transpile index.ts and run index.js
 >
-> In package.json without "outDir" in "tsconfig.json"
+> Include in package.json ("tsconfig.json" without attribute "outDir")
 >```json
 >"dist": "npx tsc src/index.ts",
 >"start:dev": "npm run dist && node src/index.js"
 >```
-> In package.json with "outDir" in "tsconfig.json"
+> Include in package.json ("tsconfig.json" with attribute "outDir")
 >```json
 >"dist": "npx tsc",
->"start:dev": "npm run dist && node src/index.js"
+>"start:dev": "npm run dist && node dist/index.js"
 >```
+>without "outDir"\
+>![index.ts and index.js](./downloads/img1.png)
+>
+>with "outDir"\
+>![index.ts and index.js](./downloads/img2.png)
+>
 > Create tsconfig.json
 >```bash
 >npx tsc --init
@@ -56,27 +62,24 @@ npm run start:dev:js
 >```bash
 >npm install tsx -D
 >```
-> In package.json
+> In package.json (witch outDir)"
 >```json
+>"dist": "npx tsc",
 >"start:dev": "tsx src/index.ts"
 >"start:watch": "tsx watch src/index.ts"
->"start:dist": "npm run dist && node src/index.js"
+>"start:dist": "npm run dist && node dist/index.js"
 >```
 
-> #### Intaling tsup for hidden *.js files
+> #### Intaling tsup compile faster
 >```bash
 >npm install tsup -D
 >```
 > In package.json
 >```json
 >"dist": "tsup src"
+>"start:dist:tsup": "npm run dist:tsup && node dist/index.cjs"
 >```
 >
->before tsup\
->![index.ts and index.js](./downloads/img1.png)
->
->after tsup\
->![index.ts and index.js](./downloads/img1.png)
->
+
 >
 
