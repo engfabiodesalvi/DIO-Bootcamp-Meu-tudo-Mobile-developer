@@ -67,7 +67,7 @@ npm run start:dev:node
 >```json
 > {
 >  "compilerOptions": {
->    "module": "nodenext", // 
+>    "module": "nodenext",
 >    "target": "ES6", 
 >    "outDir": "./dist",
 >    "esModuleInterop": true,
