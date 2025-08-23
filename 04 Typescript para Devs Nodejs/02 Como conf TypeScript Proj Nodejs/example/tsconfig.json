@@ -7,7 +7,7 @@
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "commonjs", // ok   "nodenext" default
+    "module": "nodenext", // ok   "nodenext" default
     "target": "es6", // ok  "esnext" default
     "outDir": "./dist", // ok
     "rootDir": "./src",
